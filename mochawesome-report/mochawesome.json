@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-05-12T10:28:36.881Z",
+    "end": "2025-05-12T10:29:37.656Z",
+    "duration": 60775,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "4d46fddd-c4ff-4917-8ee9-f2c0fb361831",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Specs\\Login.cy.js",
+      "file": "cypress\\e2e\\Specs\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34b0db5d-b6db-40a8-b742-1015e8a2f68f",
+          "title": "LUMA Login Screen Test Execution",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "[TC_001]: Given the user is on the Browser, when the user navigates to the url, then the Home screen logo should be displayed",
+              "fullTitle": "LUMA Login Screen Test Execution [TC_001]: Given the user is on the Browser, when the user navigates to the url, then the Home screen logo should be displayed",
+              "timedOut": null,
+              "duration": 60385,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await _LoginScreen.default.img_storeLogo.should('exist').should('be.visible');\nawait _LoginScreen.default.heading_homePageTitle.should('contain', textEn.HomePage.title);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `LUMA Login Screen Test Exec...`",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `LUMA Login Screen Test Exec...`\n    at timedOutWaitingForPageLoad (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:132749:64)\n    at <unknown> (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:133743:16)\n    at tryCatcher (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://luma_ecom_cypress/./cypress/e2e/Specs/Login.cy.js:12:7)",
+                "diff": null
+              },
+              "uuid": "68197c74-c782-4a28-aa5a-424bfa974461",
+              "parentUUID": "34b0db5d-b6db-40a8-b742-1015e8a2f68f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "[TC_002]: Given the user is on the Home Page, when the user clicks on Create an Account, fills the form and submits, then the user should be registered and redirected to My Account page",
+              "fullTitle": "LUMA Login Screen Test Execution [TC_002]: Given the user is on the Home Page, when the user clicks on Create an Account, fills the form and submits, then the user should be registered and redirected to My Account page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginScreen.default.link_createAccount.click();\n_LoginScreen.default.heading_createAccount.should('contain', textEn.CreateAccountPage.title);\n_LoginScreen.default.input_firstName.type(Cypress.env('CYPRESS_FIRST_NAME'));\n_LoginScreen.default.input_lastName.type(Cypress.env('CYPRESS_LAST_NAME'));\n_LoginScreen.default.input_email.type(Cypress.env('CYPRESS_NEW_EMAIL5'));\n_LoginScreen.default.input_password.type(Cypress.env('CYPRESS_NEW_PASSWORD'));\n_LoginScreen.default.input_confirmPassword.type(Cypress.env('CYPRESS_CONFIRM_PASSWORD'));\n_LoginScreen.default.button_createAccount.click();\n_LoginScreen.default.heading_myAccountTitle.should('contain', textEn.MyAccountPage.title);",
+              "err": {},
+              "uuid": "0b563195-3809-417b-8489-80ae02eba722",
+              "parentUUID": "34b0db5d-b6db-40a8-b742-1015e8a2f68f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "[TC_003]: Given the user is on the Home Page, when the user clicks on Sign In, enters valid credentials, and submits, then the user should be logged in and redirected to My Account page",
+              "fullTitle": "LUMA Login Screen Test Execution [TC_003]: Given the user is on the Home Page, when the user clicks on Sign In, enters valid credentials, and submits, then the user should be logged in and redirected to My Account page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginScreen.default.signIn(Cypress.env('CYPRESS_NEW_EMAIL5'), Cypress.env('CYPRESS_NEW_PASSWORD'));\n_LoginScreen.default.heading_myAccountTitle.should('contain', textEn.HomePage.title);",
+              "err": {},
+              "uuid": "b5c92a35-b35a-4392-8651-f3025585402f",
+              "parentUUID": "34b0db5d-b6db-40a8-b742-1015e8a2f68f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "68197c74-c782-4a28-aa5a-424bfa974461"
+          ],
+          "pending": [],
+          "skipped": [
+            "0b563195-3809-417b-8489-80ae02eba722",
+            "b5c92a35-b35a-4392-8651-f3025585402f"
+          ],
+          "duration": 60385,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

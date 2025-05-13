@@ -1,0 +1,107 @@
+{
+    "HomePage": {
+        "title": "Home Page"
+    },
+    "CreateAccountPage": {
+        "title": "Create New Customer Account",
+        "personalInformationLegend": "Personal Information",
+        "firstNameLabel": "First Name",
+        "lastNameLabel": "Last Name",
+        "signInInformationLegend": "Sign-in Information",
+        "emailLabel": "Email",
+        "passwordLabel": "Password",
+        "confirmPasswordLabel": "Confirm Password",
+        "createAccountButtonText": "Create an Account",
+        "backLinkText": "Back"
+    },
+    "MyAccountPage": {
+        "title": "My Account",
+        "welcome": "Welcome"
+    },
+    "SigninPage": {
+        "title": "Customer Login",
+        "signInNote": "If you have an account, sign in with your email address.",
+        "emailLabel": "Email",
+        "passwordLabel": "Password",
+        "signInButtonText": "Sign In",
+        "forgotPasswordLinkText": "Forgot Your Password?"
+    },
+    "TopNav": {
+        "whatsNew": "What's New",
+        "women": {
+            "label": "Women",
+            "tops": {
+                "label": "Tops",
+                "jackets": "Jackets",
+                "hoodiesAndSweatshirts": "Hoodies & Sweatshirts",
+                "tees": "Tees",
+                "brasAndTanks": "Bras & Tanks"
+            },
+            "bottoms": {
+                "label": "Bottoms",
+                "pants": "Pants",
+                "shorts": "Shorts"
+            }
+        },
+        "men": {
+            "label": "Men",
+            "tops": {
+                "label": "Tops",
+                "jackets": "Jackets",
+                "hoodiesAndSweatshirts": "Hoodies & Sweatshirts",
+                "tees": "Tees",
+                "tanks": "Tanks"
+            },
+            "bottoms": {
+                "label": "Bottoms",
+                "pants": "Pants",
+                "shorts": "Shorts"
+            }
+        },
+        "gear": {
+            "label": "Gear",
+            "bags": "Bags",
+            "fitnessEquipment": "Fitness Equipment",
+            "watches": "Watches"
+        },
+        "training": {
+            "label": "Training",
+            "videoDownload": "Video Download"
+        },
+        "sale": "Sale"
+    },
+    "productSpecs": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "Green",
+            "White",
+            "Yellow"
+        ],
+        "addToCart": "Add to Cart",
+        "addToWishlist": "Add to Wish List",
+        "addToCompare": "Add to Compare"
+    },
+    "successMessages": {
+        "productAddedToWishlist": "{{savedProductName}} has been added to your Wish List.",
+        "thankyouMessage": "Thank you for your purchase!",
+        "orderNumberMessage": "Your order number is: {{orderNumber}}."
+    },
+    "ShippingAddress": {
+        "title": "Shipping Address",
+        "address": "Street Address",
+        "city": "City",
+        "state": "State/Province",
+        "zip": "Zip/Postal Code",
+        "phone": "Phone Number"
+    },
+    "Payment": {
+        "title": "Payment Method",
+        "placeOrderbtn": "Place Order"
+    }
+}

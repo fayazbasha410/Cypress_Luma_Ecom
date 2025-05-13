@@ -1,0 +1,10 @@
+node_modules
+.eslintcache
+.env
+coverage
+assets/**
+dist
+.DS_Store
+webdriver/reports
+*.apk
+*.ipa
